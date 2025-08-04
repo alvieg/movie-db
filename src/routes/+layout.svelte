@@ -15,7 +15,9 @@
 </script>
 
 <nav>
-	<div class="logo">🎬 OMDbApp</div>
+	<a href="/" class:active={$page.url.pathname === '/'}>
+		<div class="logo">🎬 OMDbApp</div>
+	</a>
 
 	<div class="search">
 		<SearchBar />
@@ -27,10 +29,6 @@
 			<span class="watchlist-badge">{$watchlist.length}</span>
 		{/if}
 	</a>
-
-	<div class="links">
-		<a href="/" class:active={$page.url.pathname === '/'}>Home</a>
-	</div>
 </nav>
 
 <slot />
@@ -112,4 +110,3 @@
 		align-self: center;
 	}
 </style>
-
