@@ -109,4 +109,8 @@
 	.search {
 		align-self: center;
 	}
+
+	a {
+		text-decoration: none;
+	}
 </style>
