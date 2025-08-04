@@ -62,6 +62,8 @@
 		font-size: 1.25rem;
 		font-weight: bold;
 		letter-spacing: 0.5px;
+		text-decoration: none;
+		
 	}
 
 	.links {
@@ -69,7 +71,6 @@
 		gap: 1.5rem;
 	}
 
-	.links a,
 	.watchlist-link {
 		color: white;
 		text-decoration: none;
@@ -78,7 +79,6 @@
 		transition: opacity 0.2s;
 	}
 
-	.links a:hover,
 	.watchlist-link:hover {
 		opacity: 0.8;
 	}
@@ -108,9 +108,5 @@
 
 	.search {
 		align-self: center;
-	}
-
-	a {
-		text-decoration: none;
 	}
 </style>
