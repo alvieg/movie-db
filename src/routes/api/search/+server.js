@@ -10,7 +10,7 @@ export async function GET({ url }) {
 		return json({ error: "Missing required query parameter 'q'" }, { status: 400 });
 	}
 
-	const OMDB_API_KEY = '9ad83c1d';
+	const OMDB_API_KEY = process.env.OMDB_API_KEY;
 
 	if (!OMDB_API_KEY) {
 		return json({ error: 'Missing OMDB_API_KEY environment variable' }, { status: 500 });
